@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create new Task"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:layout_marginBottom="26dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="20dp"
+            android:background="#131e69" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="22dp"
+        android:background="@drawable/bgitemdoes"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/addTitle"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Add title"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/titleAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/backinputtask"
+                    android:hint="What to do?"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:id="@+id/addDesc"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Add description"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/titleDesc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backinputtask"
+                android:hint="How do you do that?"
+                android:inputType="text"
+                android:maxLength="40"
+                android:padding="15dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/addTarget"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Timeline"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/titleTarget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backinputtask"
+                android:hint="When you will finish it?"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bgbtncreate"
+        android:text="Create Now"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnCancel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="#AFAFAF"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbtncancel"
+        android:textSize="22sp"
+        android:layout_height="35dp" />
+
+</LinearLayout>
